@@ -8,7 +8,7 @@
         "respect/validation": "^1.1"
     },
     "license": "MIT",
-    "minimum-stability": "dev-master",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Gareth Thompson",
