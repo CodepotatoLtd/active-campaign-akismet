@@ -20,8 +20,8 @@ if( $event_name !== null || $event_name !== '' ) {
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl, CURLOPT_POST, true);
     curl_setopt($curl, CURLOPT_POSTFIELDS, array(
-        'actid' => '252352479',
-        'key' => 'c2a2e8d6e4ab94576f2addec435e79bc67b524d8',
+        'actid' => '',
+        'key' => '',
         'event' => $event_name,
         'eventdata' => $event_data,
         'visit' => json_encode(array(
