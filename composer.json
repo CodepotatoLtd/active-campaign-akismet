@@ -1,7 +1,17 @@
 {
+    "name": "codepotatoltd/activecampaignakismet",
+    "description": "Push data into Activecampaign and antispam checks with Akismet",
+    "type": "composer-plugin",
     "require": {
         "activecampaign/api-php": "^2.0",
-        "vlucas/phpdotenv": "^3.4",
+        "vlucas/phpdotenv": "^4.0",
         "respect/validation": "^1.1"
-    }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gareth Thompson",
+            "email": "gareth@codepotato.co.uk"
+        }
+    ]
 }
