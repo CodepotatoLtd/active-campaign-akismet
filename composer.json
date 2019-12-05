@@ -1,0 +1,7 @@
+{
+    "require": {
+        "activecampaign/api-php": "^2.0",
+        "vlucas/phpdotenv": "^3.4",
+        "respect/validation": "^1.1"
+    }
+}
