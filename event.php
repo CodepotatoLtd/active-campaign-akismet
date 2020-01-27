@@ -1,5 +1,10 @@
 <?php
 
+require('vendor/autoload.php');
+
+$dotenv = Dotenv\Dotenv::create(__DIR__,);
+$dotenv->load();
+
 /**
  *  NOTE: Needs two bits of data to be submitted each time.
  *
@@ -20,8 +25,8 @@ if( $event_name !== null || $event_name !== '' ) {
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl, CURLOPT_POST, true);
     curl_setopt($curl, CURLOPT_POSTFIELDS, array(
-        'actid' => '',
-        'key' => '',
+        'actid' => getenv('AC_EVENT_ID'),
+        'key' => getenv('AC_EVENT_KEY'),
         'event' => $event_name,
         'eventdata' => $event_data,
         'visit' => json_encode(array(
